@@ -1,0 +1,19 @@
+Dim url_column As Range
+Dim image_column As Range
+
+Set url_column = Worksheets(1).UsedRange.Columns("h")
+Set image_column = Worksheets(1).UsedRange.Columns("i")
+
+Dim i As Long
+
+ For i = 2 To url_column.Cells.Count
+  image_column.Cells(i).Value = "."
+  With image_column.Worksheet.Pictures.Insert(url_column.Cells(i).Value)
+    .Left = image_column.Cells(i).Left
+    .Top = image_column.Cells(i).Top
+    .Width = 35
+    .Height = 35
+    image_column.Cells(i).EntireRow.RowHeight = .Height
+  End With
+
+Next
