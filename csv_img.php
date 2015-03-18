@@ -4,7 +4,7 @@ header("Content-Type: text/html; charset=utf-8");
 session_start();
 $_SESSION['PARSE'] = '';
 echo '<!DOCTYPE html>';
-//1
+//2s
 $albom  = array(
  212624609=>array('txt'=>'Летняя обувь','name'=>'letnya'),
  212624557=>array('txt'=>'Резиновые сапоги','name'=>'Rezinov')
