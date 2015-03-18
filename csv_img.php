@@ -10,7 +10,6 @@ $albom  = array(
  212624557=>array('txt'=>'Резиновые сапоги','name'=>'Rezinov')
 );
 
-
 ?>
 
 <html>
